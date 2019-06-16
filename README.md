@@ -1,8 +1,8 @@
 # Lib of Docker Images
 
 ```
-docker build . // Get the IMG_ID
-docker run [IMG_ID]
+docker build -t [DOCKER_ID]/[IMAGE_NAME]:latest
+docker run [DOCKER_ID]/[IMAGE_NAME]
 ```
 
 Useful images that can be reused to build more containers through Docker.
