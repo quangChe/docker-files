@@ -1,0 +1,9 @@
+version: '3' # Version of Docker compose
+services: # (Containers)
+  redis-server:  # Run 'redis-server' container 
+    image: 'redis' # Using 'redis' image
+  node-app: # Run 'node-app' container 
+    build: . # Build then run image from a Dockerfile in current directory
+    ports: 
+      - "9100:9100" # Configure port from local_machine:Docker_VM
+
